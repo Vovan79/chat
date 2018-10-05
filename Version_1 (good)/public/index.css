@@ -1,0 +1,31 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#loginform {
+	min-width: 200px;
+	min-height: 80px;
+	margin: 10% auto;
+	border: 1px solid rgb(130, 224, 255);
+	padding: 2vw;
+	width: 20vw;
+}
+
+#loginform input {
+	padding: 10px;
+	margin-bottom: 10%; 
+	width: 100%; 
+	text-align: center;
+	font-size: 1em;
+}
+
+#loginform [type="submit"] {
+	width: 50%;
+	margin-left: 25%;
+	background:	rgb(130, 224, 255); 
+	border: none; 
+	padding: 10px;
+	margin-bottom: 0px; 
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login chat</title>
+		<meta charset="utf-8">
+		<link href="index.css" rel="stylesheet" />
+		<link href="chat.css" rel="stylesheet" />
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="index.js" defer></script>
+	</head>
+	<body>
+		<form action="/register" method="post" id="loginform">
+	        <input type="text" id="login" name="login" placeholder="Login" autofocus><br>
+			<input type="password" id="password" name="password" placeholder="Password" disabled><br>
+			<input id="sendButton" type="submit" value ="Log In" disabled>
+	    </form>
+
+	    <div id="chatsection">
+			<div id="msgField">
+				<ul id="messages"></ul>	
+			</div>
+			<div id="userField"></div>	
+			<form id="chatform">
+				<input type="text" id="m"><button>Send</button>
+			</form>
+		</div>
+
+<!--		<script>
+
+			socket.on('bad password', function() {
+  				$('password').value = "";
+  				$('password').focus();
+  			});
+
+  			socket.on('user is active', function() {
+  				console.log("This user is active already");
+  				$('login').value = "";
+  				$('password').value = "";
+  				$('login').focus();
+  			});
+
+  			socket.on('open chat', function(users) {
+				$('loginform').style.display = 'none';
+				$('chatsection').style.display = 'block';
+				$('m').focus();
+				showActiveUsers(users);
+
+				function showActiveUsers(users) {
+					if(activeUsers.length == 0) {
+						for(var i = 0; i < users.length; i++) {
+							var userBlock = document.createElement('div');
+							userBlock.classList.add('activeUsers');
+							userBlock.innerText = users[i]["name"];
+							userBlock.style.background = users[i]["color"];
+							$('userField').appendChild(userBlock);
+						}
+						activeUsers	= users;					
+					}
+					else {
+						var userBlock = document.createElement('div');
+						userBlock.classList.add('activeUsers');
+						userBlock.innerText = users[users.length - 1]["name"];
+						userBlock.style.background = users[users.length - 1]["color"];
+						$('userField').appendChild(userBlock); 	
+					}
+				}
+			});*/
+		</script>	-->
+	</body>
+</html>

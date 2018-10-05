@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>myChat</title>
+		<meta charset="utf-8">
+		<link href="chat.css" rel="stylesheet" />
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="chat.js" defer></script>		
+	</head>
+	<body>
+		<div id="chatsection">
+			<div id="msgField">
+				<ul id="messages"></ul>	
+			</div>
+			<div id="userField"></div>	
+			<form id="chatform">
+				<input type="text" id="m" autofocus><button>Send</button>
+			</form>
+		</div>
+
+		<script>
+			/*
+			var socket = io();
+
+			function $(a) {
+				return document.getElementById(a);
+			}
+
+			$('chatform').onsubmit = function(){
+    			socket.emit('chat message', $('m').value);
+    			$('m').value = '';
+    			$('m').setAttribute("disabled", true);
+  				setTimeout(function() {
+  					$('m').removeAttribute("disabled");
+  					$('m').focus();
+  				},3000);
+    			return false;
+  			}
+
+  			socket.on('chat message', function(data) {
+  				var newLi = document.createElement('li');
+				newLi.innerHTML = data["name"] + ": " + data["msg"];
+				newLi.style.color = data["color"];
+  				$('messages').appendChild(newLi);  				
+  			});	*/
+		</script>
+	</body>
+</html>

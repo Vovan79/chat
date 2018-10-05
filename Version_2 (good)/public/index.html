@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login chat</title>
+		<meta charset="utf-8">
+		<link href="index.css" rel="stylesheet" />
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="index.js" defer></script>
+	</head>
+	<body>
+		<form action="/register" method="post" id="loginform">
+	        <input type="text" id="login" name="login" placeholder="Login" autofocus><br>
+			<input type="password" id="password" name="password" placeholder="Password" disabled><br>
+			<input id="sendButton" type="submit" value ="Log In" disabled>
+	    </form>
+	</body>
+</html>
